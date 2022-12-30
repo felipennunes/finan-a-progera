@@ -1,0 +1,97 @@
+.login{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 7, 7);
+    color:white;
+
+}
+
+.banner-login{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-login img{
+    position: relative;
+    bottom: 40px;
+}
+
+.login-title-1 {
+        display: inline-block;
+        text-align: left;
+        margin: 25vh 6rem;
+        @include flex (space-between, center);
+
+        p {
+            color: dark;
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 3rem;
+        }
+}
+
+.login-title-2 {
+        display: inline-block;
+        background: rgb(243, 17, 17);
+        border-radius: 1rem;
+        box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1),
+                    0.25rem 1rem 1rem rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+
+        p {
+            color:dark;
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 10rem;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: left;
+        color: dark;
+        width: 100%;
+        background: var(--primary-color);
+        @include flex(space-between, center);
+        transition: background 0.3s ease-in-out;
+
+}
+
+
+@media screen and (max-width: 1200px){
+    .banner-login{
+        width: 50%;
+        padding: 0 2%;
+    }
+    .banner-login img{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .banner-login{
+        display: none;
+    }
+    .banner-login img{
+        width: 100%;
+    }
+}
